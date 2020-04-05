@@ -5,9 +5,9 @@ from random import randint
 client = MongoClient(port=27017)
 db=db.messages ##тут пока не разобарлся до конца
 #Step 2: Create sample data
-name = ['','','', '', '','','', '','', '','','', '']
-text = ['','','','']
-time = ['', '', '', '', '', '', '', '']
+name = ['alex','andy','', '', '','','', '','', '','','', '']
+text = ['hi man','hi bro','','']
+time = ['1', '1', '', '', '', '', '', '']
 for x in range(1, 501):
     business = {
         'name' : names[randint(0, (len(name)-1))] + ' ' + name[randint(0, (len(names)-1))]  + ' ' + company_type[randint(0, (len(company_type)-1))],
