@@ -34,8 +34,10 @@ def send_view():
     input:username: str, text: str
     :return:{"ok": True}
     """
+    print(request.json)
     username = request.json['username']
     text = request.json['text']
+    messages.append({'username': username, 'time': time.time(), 'text': text})
     # TODO: add method for appending to Mongo
     return {'ok': True}
 
