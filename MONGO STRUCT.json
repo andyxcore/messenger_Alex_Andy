@@ -1,0 +1,9 @@
+db.createCollection(
+"messages", {
+validator: {
+name: {$type: "string"},
+text: {$type: "string"},
+time: {$type: "bool"},
+}
+}
+);
