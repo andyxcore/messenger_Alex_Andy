@@ -1,6 +1,8 @@
 from datetime import datetime
 import time
 from flask import Flask, request
+from pymongo import MongoClient
+
 
 app = Flask(__name__)
 messages = [
